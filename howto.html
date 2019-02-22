@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hidden by role howto guide.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1><span class="glyphicon glyphicon-info-sign"></span> How to use the hidden by role module:</h1>
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    Using the module
+                </div>
+                <div class="panel-body">
+
+                    <ul>
+                        <li>Enable the module for your project.</li>
+                        <li>Create a field with this annotation: <pre>@HIDE_BY_ROLE=&lt;role that exceptionally can see the field&gt;</pre></li>
+                        <li>
+                            The role that you enter must be the exact name of the role as defined in the user rights environment.
+                        </li>
+                        <li>
+                            If the role cannot be found an error will be thrown.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    Example:
+                </div>
+                <div class="panel-body">
+                    <pre>@HIDE_BY_ROLE=role2</pre>
+                </div>
+            </div>
+
+    </body>
+</html>
