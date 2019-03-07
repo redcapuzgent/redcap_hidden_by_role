@@ -84,7 +84,7 @@ class HideByRoleClass extends \ExternalModules\AbstractExternalModule {
         include "hideaway.js";
 
         foreach ($fieldsToHide as $fieldToHide) {
-            echo 'UZG_hideaway.hideIt("' . $fieldToHide . '")';
+            echo 'UZG_hideaway.hideIt("' . $fieldToHide . '");';
         }
 
         echo "</script>";
